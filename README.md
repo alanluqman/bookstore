@@ -24,7 +24,7 @@ To get a local copy of this calculator, Please follow these simple example steps
 
 ## Authors
 
-👤 ** Alan Luqman **
+👤 **Alan Luqman**
 
 - GitHub: [@alanluqman](https://github.com/alanluqman)
 - LinkedIn: [Alan Luqman](https://linkedin.com/in/alan-luqman-61623b17a)
@@ -46,4 +46,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is **[MIT]**(./MIT.md) licensed.

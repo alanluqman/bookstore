@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import './book.css';
 
 function Book(props) {
   const { title, author } = props;

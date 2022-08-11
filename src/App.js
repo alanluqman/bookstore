@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './app.css';
 import Navigation from './components/navigation';
@@ -11,8 +10,8 @@ function App() {
           <Navigation />
         </div>
         <Routes>
-          <Route path="/catigories" element='' />
-          <Route path="/" element='' />
+          <Route path="/catigories" element="" />
+          <Route path="/" element="" />
         </Routes>
       </BrowserRouter>
     </div>

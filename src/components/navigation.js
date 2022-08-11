@@ -9,7 +9,7 @@ function Navigation() {
           <div>
             <Link className="logo" to="/">Bookstore CMS</Link>
             <Link className="nav-items" to="/">HOME</Link>
-            <Link className="nav-items" to="/">CATIGORIES</Link>
+            <Link className="nav-items" to="/categories">CATEGORIES</Link>
           </div>
           <i className="user fa fa-user" />
         </nav>

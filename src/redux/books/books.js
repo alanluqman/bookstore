@@ -8,6 +8,7 @@ export default function addRemoveReducer(state = [], action) {
       ...state, {
         id: lastId + 1,
         title: action.title,
+        author: action.author,
       },
     ];
     // remove action
@@ -17,9 +18,10 @@ export default function addRemoveReducer(state = [], action) {
   }
 }
 
-export const addBook = (title) => ({
+export const addBook = (title, author) => ({
   type: ADD_BOOK,
   title,
+  author,
 });
 
 export const removeBook = (id) => ({

@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import './App.css';
 import Books from './components/books';
-import Categories from './components/catigories';
+import Categories from './components/categories';
 import Navigation from './components/navigation';
 import store from './redux/configureStore';
 

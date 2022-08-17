@@ -1,4 +1,4 @@
-const CHECK = 'bookstore/categories/CHECK';
+const CHECK = 'bookstore/categories/underConstruction';
 
 export default function categoriesReducer(state = [], action) {
   switch (action.type) {
@@ -8,6 +8,6 @@ export default function categoriesReducer(state = [], action) {
   }
 }
 
-export const checkCategories = () => ({
+export const underConstruction = () => ({
   type: CHECK,
 });

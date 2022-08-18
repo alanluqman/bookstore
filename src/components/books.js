@@ -1,6 +1,5 @@
-/* eslint-disable prefer-const */
 /* eslint-disable max-len */
-// import { React, useState } from 'react';
+/* eslint-disable prefer-const */
 import axios from 'axios';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';

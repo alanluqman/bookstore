@@ -1,7 +1,6 @@
 const ADD_BOOK = 'bookstore/books/addBook';
 const REMOVE_BOOK = 'bookstore/books/removeBook';
 const FETCH_DATA = 'bookstore/books/fetchData';
-// const initialData = [{ id: 1, title: 'First book', author: 'alan' }];
 export default function addRemoveReducer(state = [], action) {
   switch (action.type) {
     // fetch data from API

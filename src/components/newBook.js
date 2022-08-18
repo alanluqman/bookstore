@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import axios from 'axios';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
@@ -7,6 +8,7 @@ function NewBook() {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
   const dispatch = useDispatch();
+  const api = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/sPebu2dL8D3Eo32zfpOG/books/';
 
   function changeTitle(e) {
     setTitle(e.target.value);
@@ -14,11 +16,17 @@ function NewBook() {
   function changeAuthor(e) {
     setAuthor(e.target.value);
   }
-  function sendData() {
+  async function sendData() {
     // input validation
     if (title.trim() !== '' && author.trim() !== '') {
       const id = new Date().getTime(); // create a new ID each milliseconds.
       dispatch(addBook({ id, title, author }));
+      await axios.post(api, {
+        item_id: id,
+        title,
+        author,
+        category: 'under construction',
+      });
     }
     setTitle('');
     setAuthor('');

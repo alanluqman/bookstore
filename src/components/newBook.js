@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
+import './newBook.css';
 
 function NewBook() {
   const [title, setTitle] = useState('');
@@ -24,18 +25,27 @@ function NewBook() {
         item_id: id,
         title,
         author,
-        category: 'under construction',
+        category: 'Category',
       });
     }
     setTitle('');
     setAuthor('');
   }
   return (
-    <>
-      <input type="text" placeholder="Book name" value={title} onChange={changeTitle} />
-      <input type="text" placeholder="Author" value={author} onChange={changeAuthor} />
-      <button type="button" onClick={sendData}>Add</button>
-    </>
+    <div className="add-newBook-holder">
+      <h1 className="add-new-heading">Add new Book</h1>
+      <div className="input-holder">
+        <input className="input input-title" type="text" placeholder="Book title" value={title} onChange={changeTitle} />
+        <input className="input input-author" type="text" placeholder="Author" value={author} onChange={changeAuthor} />
+        <select className="input" disabled>
+          <option value="" style={{ color: '#1212123a' }}>Category</option>
+          <option value="Novel">Novel</option>
+          <option value="Story">Story</option>
+          <option value="Science">Science</option>
+        </select>
+        <button className="input addNewBtn" type="button" onClick={sendData}>Add Book</button>
+      </div>
+    </div>
   );
 }
 

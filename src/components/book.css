@@ -1,3 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
 .book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   background-color: white;
+  border: 1px solid rgb(236, 236, 236);
+  border-radius: 5px;
+  padding: 16px;
+  max-width: 1000px;
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 500px) {
+  .book {
+    flex-direction: row;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.category {
+  font-size: 11px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #12121285;
+  margin: 0;
+}
+
+.title {
+  font-size: 16px;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin: 3px 0;
+}
+
+.author {
+  font-size: 11px;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #4386bf;
+  margin: 0;
+}
+
+.action-holder {
+  margin-top: 13px;
+  gap: 20px;
+}
+
+.actionBtn {
+  background-color: transparent;
+  border: 0;
+  color: #4386bf;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  padding: 0;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.actionBtn:hover {
+  color: #013461;
+}
+
+.complete-bar {
+  width: 45px;
+  height: 45px;
+  border: 4px solid #62a6e2;
+  border-radius: 50%;
+}
+
+.completion-holder {
+  gap: 10px;
+}
+
+.precentage {
+  font-size: 20px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.completed {
+  color: #12121285;
+  font-size: 9px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.current-chapter {
+  color: #12121285;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.chapter {
+  color: #121212;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.update-progress {
+  background-color: #0290ff;
+  color: white;
+  padding: 6px 20px;
+  border: 0;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+svg {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.bg {
+  fill: none;
+  stroke-width: 5px;
+  stroke: #1212123a;
+}
+
+.meter {
+  fill: none;
+  stroke-width: 5px;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke-dasharray: 360;
+  stroke: #0290ff;
 }

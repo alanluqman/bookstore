@@ -1,0 +1,61 @@
+.add-newBook-holder {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 16px;
+}
+
+.add-new-heading {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  color: #12121285;
+  font-size: 16px;
+}
+
+.input-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (min-width: 500px) {
+  .input-holder {
+    flex-direction: row;
+  }
+}
+
+.input {
+  border: 1px solid #12121285;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.input:focus {
+  outline: 1px solid #0290ff;
+}
+
+.addNewBtn {
+  padding: 10px 0;
+  text-transform: uppercase;
+  color: white;
+  background-color: #0290ff;
+  font-size: 12px;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.addNewBtn:active {
+  background-color: #0271f0;
+}
+
+@media screen and (min-width: 500px) {
+  .addNewBtn {
+    width: 20%;
+  }
+
+  .input-title {
+    width: 40%;
+  }
+
+  .input-author {
+    width: 30%;
+  }
+}
